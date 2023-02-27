@@ -16,3 +16,12 @@ console.log(list.findIndex(x => x < 0))
 
 
 // Array.fill
+const arr = new Array(10)
+arr.fill("Name")
+console.log(arr)
+
+arr.fill("Rafael", 0, 1)
+console.log(arr)
+
+arr.fill("Marcia", 2, 3)
+console.log(arr)

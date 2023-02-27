@@ -1,5 +1,5 @@
 function hello(name){
-    console.log(name)
+    return console.log(name)
 }
 
 hi = (realName) => {
@@ -15,4 +15,5 @@ const studentNickName = "Rafa"
 hello(studentName)
 hi(studentRealName)
 hey(studentNickName)
+
 

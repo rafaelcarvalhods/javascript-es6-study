@@ -20,14 +20,29 @@ const [a, b, ...c] = arr
 console.log(`
 a: ${a} b: ${b} c: ${c}`)
 
+//Skip itens from array
+const [d, , e] = arr
+console.log(`d: ${d} e ${e}`)
+
 let x = 1;
 let y = 2;
 [x, y] = [y, x]
 console.log(`x: ${x} y: ${y}`)
 
-//____________________________________________
+//_Destruct function return value___________
 
 const returnNames = () => ["Rafa", "Marcia"];
 const [name1, name2] = returnNames()
 console.log(`${name1} & ${name2}!`)
 
+
+//_Destruct a function parameter____________
+
+const returnProps = ({name, surname, email, }) => {
+    console.log(`
+    Name: ${name}
+    Surname: ${surname}
+    Email: ${email}`)
+}
+
+returnProps(data)

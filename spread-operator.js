@@ -13,6 +13,10 @@ const user2 = { name: "Marcia", surname: "Carvalho" };
 
 
 // Combining
-const users =  [ { ...user1, ...user2 } ];
+const users =  { ...user1, ...user2 }; // Doesn`t work because both objects have the same keys. So only the last one remains
 console.log(users)
+
+const social = { linkedin: "likedin.com" }
+const currentUser = { ...user1, ...social }
+console.log(currentUser)
 

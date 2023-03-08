@@ -1,3 +1,5 @@
+import fetch from "node-fetch";
+
 const myPromise = new Promise((resolve, reject) => {
     
     const name = "Rafael"
@@ -21,7 +23,7 @@ fetch(`https://api.github.com/users/${userName}`, {
     method: 'GET',
     headers: {
         Accept: 'application/vnd.github.v3+json',
-    }
+    },
 }).then((response) => {
     console.log(typeof response)
 })

@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/rafaelcarvalhods/javascript-es6-study/issues"
   },
-  "homepage": "https://github.com/rafaelcarvalhods/javascript-es6-study#readme"
+  "homepage": "https://github.com/rafaelcarvalhods/javascript-es6-study#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
 }

@@ -1,5 +1,4 @@
-import fetch from 'node-fetch'
-import 
+import fetch from 'node-fetch' 
 
 const myPromise = new Promise((resolve, reject) => {
 
@@ -27,6 +26,6 @@ fetch(`https://api.github.com/users/${userName}`, {
     console.log(typeof response)
 })
 
-const list = fetch('/home/rafaelcarvalhods/Desktop/Dev/javascript-es6-study/list.json')
-list.then((item) => console.log(item))
+// const list = fetch('/home/rafaelcarvalhods/Desktop/Dev/javascript-es6-study/list.json')
+// list.then((item) => console.log(item))
 

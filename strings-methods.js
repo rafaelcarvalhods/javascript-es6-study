@@ -4,7 +4,7 @@ let text = "JavaScript is a great programming language!"
 if(text.startsWith("JacaScript")){
     console.log("The string begins with the word 'JavaScript'.")
 } else {
-    console.log("The word wasn't found.")
+    console.log("The word wasn't found.") 
 }
 
 

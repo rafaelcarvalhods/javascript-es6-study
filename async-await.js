@@ -12,7 +12,6 @@ async function add(firstNumber, secondNumber){
 
 }
 
-
 // function add(firstNumber, secondNumber){
 //   return new Promise((resolve, reject) => {
 //     if (typeof firstNumber !== 'number' || typeof secondNumber !== 'number'){
@@ -25,3 +24,5 @@ async function add(firstNumber, secondNumber){
         
 //   })
 // }
+
+// Await

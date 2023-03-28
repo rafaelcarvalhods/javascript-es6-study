@@ -1,4 +1,4 @@
-// Async envolves a function in a Promise
+// Async envolves a function in a Promise / makes a function return a Promise
 
 const isNumber = value => typeof(value) === 'number'
 
@@ -23,15 +23,21 @@ async function add(firstNumber, secondNumber){
 //   })
 // }
 
-// Await
+// Await makes a function wait for a Promise
 
 const url = 'https://jsonplaceholder.typicode.com/users'
 
 const getPosts = async () => {
-  const response = await fetch(url)
+  try {
+    const response = await axios.get(url)
 
-  console.log(response)
+    console.log(response.data)
+
+  } catch (error) {
+    console.log('Gotcha', error)
+  }
 }
 
 getPosts()
+
 
